@@ -5,6 +5,8 @@
 ``` bash
 docker ps
 ```
+use -a to list all containers
+
 2. List all available images
 
 
@@ -29,7 +31,18 @@ docker exec -it <container_name> <command (eg: psql)> [args]
 ``` bash
 docker logs <container_name>
 ```
+6. Stop container logs 
 
+``` bash
+docker stop <container_name>
+```
+
+7. start a container
+
+``` bash
+docker start <container_name> 
+```
+use -a to list all containers
 *** Refrences:
 
 1. Run docker images (postgres as example): https://hub.docker.com/_/postgres
